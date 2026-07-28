@@ -1,4 +1,7 @@
 import 'package:ecommerce/screens/auth/auth_screen.dart';
+import 'package:ecommerce/screens/auth/create_account_screen.dart';
+import 'package:ecommerce/screens/auth/forgot_pswd_screen.dart';
+import 'package:ecommerce/screens/auth/signin_screen.dart';
 import 'package:ecommerce/screens/home/splash_screen.dart';
 import 'package:flutter/material.dart';
 
