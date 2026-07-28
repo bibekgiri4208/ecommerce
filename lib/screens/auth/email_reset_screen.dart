@@ -1,0 +1,60 @@
+import 'package:ecommerce/screens/auth/auth_screen.dart';
+import 'package:flutter/material.dart';
+
+class EmailResetScreen extends StatelessWidget {
+  const EmailResetScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            children: [
+              SizedBox(height: 250),
+              Image.asset("assets/mail.png", height: 120),
+
+              SizedBox(height: 30),
+
+              Text(
+                "We Sent you an Email to reset\nyour password.",
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+              ),
+
+              SizedBox(height: 30),
+
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => AuthScreen()),
+                  );
+                },
+                child: Container(
+                  height: 60,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    color: Color(0xFF8E6CEF),
+                    borderRadius: BorderRadius.circular(40),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Return to Login",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
