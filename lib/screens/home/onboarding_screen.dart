@@ -1,3 +1,4 @@
+import 'package:ecommerce/screens/home/dashboard_screen.dart';
 import 'package:ecommerce/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -122,7 +123,7 @@ class OnboardingScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => HomeScreen()),
+                      MaterialPageRoute(builder: (_) => DashBoardScreen()),
                     );
                   },
                   child: Container(

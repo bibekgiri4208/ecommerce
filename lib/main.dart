@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const DashBoardScreen(),
+      home: const SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

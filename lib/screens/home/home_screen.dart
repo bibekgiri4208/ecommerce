@@ -1,4 +1,5 @@
 import 'package:ecommerce/screens/data/product_data.dart';
+import 'package:ecommerce/screens/home/categories_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -79,11 +80,19 @@ class HomeScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Text(
-                    "See All",
-                    style: GoogleFonts.gabarito(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w400,
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => CategoriesScreen()),
+                      );
+                    },
+                    child: Text(
+                      "See All",
+                      style: GoogleFonts.gabarito(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
                     ),
                   ),
                 ],
