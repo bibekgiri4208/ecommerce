@@ -1,6 +1,7 @@
 import 'package:ecommerce/screens/auth/create_account_screen.dart';
 import 'package:ecommerce/screens/auth/signin_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
@@ -17,7 +18,10 @@ class AuthScreen extends StatelessWidget {
               SizedBox(height: 160),
               Text(
                 "Sign In",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+                style: GoogleFonts.gabarito(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
 
               SizedBox(height: 20),
@@ -53,7 +57,7 @@ class AuthScreen extends StatelessWidget {
                   child: Center(
                     child: Text(
                       "Continue",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.w500,
@@ -75,11 +79,14 @@ class AuthScreen extends StatelessWidget {
                 child: RichText(
                   text: TextSpan(
                     text: "Don't have an Account?",
-                    style: TextStyle(fontSize: 13, color: Colors.black),
+                    style: GoogleFonts.gabarito(
+                      fontSize: 13,
+                      color: Colors.black,
+                    ),
                     children: [
                       TextSpan(
                         text: " Create One",
-                        style: TextStyle(
+                        style: GoogleFonts.gabarito(
                           fontSize: 13,
                           fontWeight: FontWeight.w500,
                         ),
@@ -104,14 +111,18 @@ class AuthScreen extends StatelessWidget {
                   children: [
                     Text(
                       "Continue with Apple",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         fontSize: 19,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                     Positioned(
                       left: 20,
-                      child: Image.asset("assets/apple_icon.png"),
+                      child: Image.asset(
+                        "assets/apple_icon.png",
+                        width: 30,
+                        height: 30,
+                      ),
                     ),
                   ],
                 ),
@@ -130,14 +141,18 @@ class AuthScreen extends StatelessWidget {
                   children: [
                     Text(
                       "Continue with Google",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         fontSize: 19,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                     Positioned(
                       left: 20,
-                      child: Image.asset("assets/google.png"),
+                      child: Image.asset(
+                        "assets/google_icon.png",
+                        width: 30,
+                        height: 30,
+                      ),
                     ),
                   ],
                 ),
@@ -156,14 +171,18 @@ class AuthScreen extends StatelessWidget {
                   children: [
                     Text(
                       "Continue with Facebook",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         fontSize: 19,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                     Positioned(
                       left: 20,
-                      child: Image.asset("assets/facebook.png"),
+                      child: Image.asset(
+                        "assets/facebook_icon.png",
+                        width: 30,
+                        height: 30,
+                      ),
                     ),
                   ],
                 ),
