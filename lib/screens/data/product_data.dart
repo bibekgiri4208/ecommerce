@@ -8,18 +8,18 @@ List categoriesData = [
 
 List topsellingData = [
   {
-    "image": "assets/images/jacket.png",
+    "image": "assets/harrington.png",
     "name": "Men's Harrington Jacket",
-    "price": "\$148.00",
+    "price": "148.00",
   },
   {
-    "image": "assets/images/slides.png",
+    "image": "assets/slides.png",
     "name": "Max Cirro Men's Slides",
-    "price": "\$55.00",
+    "price": "55.00",
   },
   {
-    "image": "assets/images/shirt.png",
+    "image": "assets/coaches.png",
     "name": "Men's Coaches Jacket",
-    "price": "\$35.00",
+    "price": "35.00",
   },
 ];
