@@ -1,4 +1,4 @@
-import 'package:ecommerce/screens/details/product_list.dart';
+import 'package:ecommerce/screens/data/product_data.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -92,7 +92,7 @@ class HomeScreen extends StatelessWidget {
               height: 90,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: productData.length,
+                itemCount: categoriesData.length,
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 5),
@@ -103,11 +103,11 @@ class HomeScreen extends StatelessWidget {
                           CircleAvatar(
                             radius: 22,
                             backgroundImage: AssetImage(
-                              productData[index]['image'],
+                              categoriesData[index]['image'],
                             ),
                           ),
                           SizedBox(height: 10),
-                          Text(productData[index]['name']),
+                          Text(categoriesData[index]['name']),
                         ],
                       ),
                     ),
@@ -135,6 +135,17 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+
+            SizedBox(height: 20),
+
+            SizedBox(
+              height: 285,
+              child: Container(
+                width: 180,
+                color: Colors.red,
+                child: const Center(child: Text("Hello")),
+              ),
             ),
           ],
         ),
