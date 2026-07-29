@@ -1,5 +1,6 @@
 import 'package:ecommerce/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -20,7 +21,7 @@ class OnboardingScreen extends StatelessWidget {
                     SizedBox(height: 180),
                     Text(
                       "Tell us About yourself",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         fontSize: 25,
                         fontWeight: FontWeight.w600,
                       ),
@@ -30,7 +31,7 @@ class OnboardingScreen extends StatelessWidget {
 
                     Text(
                       "Who do you shop for ?",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         fontSize: 15,
                         fontWeight: FontWeight.w500,
                       ),
@@ -51,7 +52,7 @@ class OnboardingScreen extends StatelessWidget {
                           child: Center(
                             child: Text(
                               "Men",
-                              style: TextStyle(
+                              style: GoogleFonts.gabarito(
                                 color: Colors.white,
                                 fontSize: 20,
                                 fontWeight: FontWeight.w400,
@@ -64,13 +65,13 @@ class OnboardingScreen extends StatelessWidget {
                           height: 60,
                           width: 180,
                           decoration: BoxDecoration(
-                            color: Colors.grey.withValues(alpha: 0.55),
+                            color: Colors.grey.withValues(alpha: 0.25),
                             borderRadius: BorderRadius.circular(40),
                           ),
                           child: Center(
                             child: Text(
                               "Women",
-                              style: TextStyle(
+                              style: GoogleFonts.gabarito(
                                 color: Colors.black,
                                 fontSize: 20,
                                 fontWeight: FontWeight.w400,
@@ -85,7 +86,7 @@ class OnboardingScreen extends StatelessWidget {
 
                     Text(
                       "How Old are you ?",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         fontSize: 15,
                         fontWeight: FontWeight.w500,
                       ),
@@ -133,7 +134,7 @@ class OnboardingScreen extends StatelessWidget {
                     child: Center(
                       child: Text(
                         "Finish",
-                        style: TextStyle(
+                        style: GoogleFonts.gabarito(
                           color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.w400,

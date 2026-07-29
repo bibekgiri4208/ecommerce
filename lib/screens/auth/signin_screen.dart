@@ -1,6 +1,7 @@
 import 'package:ecommerce/screens/auth/forgot_pswd_screen.dart';
 import 'package:ecommerce/screens/home/onboarding_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SigninScreen extends StatelessWidget {
   const SigninScreen({super.key});
@@ -17,7 +18,10 @@ class SigninScreen extends StatelessWidget {
               SizedBox(height: 160),
               Text(
                 "Sign In",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+                style: GoogleFonts.gabarito(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
 
               SizedBox(height: 20),
@@ -53,7 +57,7 @@ class SigninScreen extends StatelessWidget {
                   child: Center(
                     child: Text(
                       "Continue",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.w500,
@@ -75,7 +79,10 @@ class SigninScreen extends StatelessWidget {
                 child: RichText(
                   text: TextSpan(
                     text: "Forgot password?",
-                    style: TextStyle(fontSize: 13, color: Colors.black),
+                    style: GoogleFonts.gabarito(
+                      fontSize: 13,
+                      color: Colors.black,
+                    ),
                     children: [
                       TextSpan(
                         text: " Reset",

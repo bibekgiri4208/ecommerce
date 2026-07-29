@@ -2,6 +2,7 @@ import 'package:ecommerce/screens/auth/auth_screen.dart';
 import 'package:ecommerce/screens/auth/forgot_pswd_screen.dart';
 import 'package:ecommerce/screens/auth/signin_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CreateAccountScreen extends StatelessWidget {
   const CreateAccountScreen({super.key});
@@ -36,7 +37,10 @@ class CreateAccountScreen extends StatelessWidget {
               SizedBox(height: 40),
               Text(
                 "Create Account",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+                style: GoogleFonts.gabarito(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
 
               SizedBox(height: 20),
@@ -114,7 +118,7 @@ class CreateAccountScreen extends StatelessWidget {
                   child: Center(
                     child: Text(
                       "Continue",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.w500,
@@ -136,11 +140,14 @@ class CreateAccountScreen extends StatelessWidget {
                 child: RichText(
                   text: TextSpan(
                     text: "Forgot password?",
-                    style: TextStyle(fontSize: 13, color: Colors.black),
+                    style: GoogleFonts.gabarito(
+                      fontSize: 13,
+                      color: Colors.black,
+                    ),
                     children: [
                       TextSpan(
                         text: " Reset",
-                        style: TextStyle(
+                        style: GoogleFonts.gabarito(
                           fontSize: 13,
                           fontWeight: FontWeight.w500,
                         ),

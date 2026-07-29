@@ -2,6 +2,7 @@ import 'package:ecommerce/screens/auth/auth_screen.dart';
 import 'package:ecommerce/screens/auth/email_reset_screen.dart';
 import 'package:ecommerce/screens/auth/signin_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ForgotPswdScreen extends StatelessWidget {
   const ForgotPswdScreen({super.key});
@@ -36,7 +37,10 @@ class ForgotPswdScreen extends StatelessWidget {
               SizedBox(height: 40),
               Text(
                 "Forgot Password",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+                style: GoogleFonts.gabarito(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
 
               SizedBox(height: 20),
@@ -72,7 +76,7 @@ class ForgotPswdScreen extends StatelessWidget {
                   child: Center(
                     child: Text(
                       "Continue",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.w500,

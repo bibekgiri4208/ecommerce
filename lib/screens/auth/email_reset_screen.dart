@@ -1,5 +1,6 @@
 import 'package:ecommerce/screens/auth/auth_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class EmailResetScreen extends StatelessWidget {
   const EmailResetScreen({super.key});
@@ -19,7 +20,10 @@ class EmailResetScreen extends StatelessWidget {
 
               Text(
                 "We Sent you an Email to reset\nyour password.",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style: GoogleFonts.gabarito(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w500,
+                ),
                 textAlign: TextAlign.center,
               ),
 
@@ -42,7 +46,7 @@ class EmailResetScreen extends StatelessWidget {
                   child: Center(
                     child: Text(
                       "Return to Login",
-                      style: TextStyle(
+                      style: GoogleFonts.gabarito(
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.w500,
