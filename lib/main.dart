@@ -2,6 +2,8 @@ import 'package:ecommerce/screens/auth/auth_screen.dart';
 import 'package:ecommerce/screens/auth/create_account_screen.dart';
 import 'package:ecommerce/screens/auth/forgot_pswd_screen.dart';
 import 'package:ecommerce/screens/auth/signin_screen.dart';
+import 'package:ecommerce/screens/home/home_screen.dart';
+import 'package:ecommerce/screens/home/onboarding_screen.dart';
 import 'package:ecommerce/screens/home/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const SplashScreen(),
+      home: const OnboardingScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
