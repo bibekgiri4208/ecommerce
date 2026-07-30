@@ -2,6 +2,7 @@ import 'package:ecommerce/screens/auth/auth_screen.dart';
 import 'package:ecommerce/screens/auth/create_account_screen.dart';
 import 'package:ecommerce/screens/auth/forgot_pswd_screen.dart';
 import 'package:ecommerce/screens/auth/signin_screen.dart';
+import 'package:ecommerce/screens/categories/hoodies_screen.dart';
 import 'package:ecommerce/screens/home/dashboard_screen.dart';
 import 'package:ecommerce/screens/home/home_screen.dart';
 import 'package:ecommerce/screens/home/onboarding_screen.dart';
