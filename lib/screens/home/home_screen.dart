@@ -323,7 +323,7 @@ class HomeScreen extends StatelessWidget {
                                 SizedBox(height: 8),
 
                                 Text(
-                                  "${topsellingData[index]["price"]}",
+                                  "\$${topsellingData[index]["price"]}",
                                   style: GoogleFonts.gabarito(
                                     fontSize: 17,
                                     fontWeight: FontWeight.bold,
