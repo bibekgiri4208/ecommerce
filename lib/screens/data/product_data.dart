@@ -52,3 +52,9 @@ List hoodiesData = [
   },
   {"image": "assets/grey_hoodie.png", "name": "Grey Hoodie", "price": "24.55"},
 ];
+
+List detailData = [
+  {"image": "assets/harrington.png"},
+  {"image": "assets/harrington2.png"},
+  {"image": "assets/harrington3.png"},
+];
