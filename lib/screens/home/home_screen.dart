@@ -1,4 +1,5 @@
 import 'package:ecommerce/screens/data/product_data.dart';
+import 'package:ecommerce/screens/detail/detail_screen.dart';
 import 'package:ecommerce/screens/home/categories_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -155,82 +156,90 @@ class HomeScreen extends StatelessWidget {
 
               SizedBox(
                 height: 320,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: topsellingData.length,
-                  itemBuilder: (context, index) {
-                    return Container(
-                      width: 180,
-                      margin: const EdgeInsets.only(right: 15),
-                      decoration: BoxDecoration(
-                        color: Colors.grey.withValues(alpha: 0.15),
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          // Product Image
-                          Expanded(
-                            child: Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.vertical(
-                                    top: Radius.circular(20),
-                                  ),
-                                  child: Image.asset(
-                                    topsellingData[index]["image"],
-                                    width: double.infinity,
-                                    height: double.infinity,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-
-                                // Favourite Icon
-                                Positioned(
-                                  top: 12,
-                                  right: 12,
-                                  child: Icon(
-                                    Icons.favorite_border,
-                                    size: 24,
-                                    color: Colors.black,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-
-                          // Product Details
-                          Padding(
-                            padding: const EdgeInsets.all(12),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  topsellingData[index]["name"],
-                                  maxLines: 2,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: GoogleFonts.gabarito(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-
-                                SizedBox(height: 8),
-
-                                Text(
-                                  "\$${topsellingData[index]["price"]}",
-                                  style: GoogleFonts.gabarito(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => DetailScreen()),
                     );
                   },
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: topsellingData.length,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        width: 180,
+                        margin: const EdgeInsets.only(right: 15),
+                        decoration: BoxDecoration(
+                          color: Colors.grey.withValues(alpha: 0.15),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            // Product Image
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(20),
+                                    ),
+                                    child: Image.asset(
+                                      topsellingData[index]["image"],
+                                      width: double.infinity,
+                                      height: double.infinity,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+
+                                  // Favourite Icon
+                                  Positioned(
+                                    top: 12,
+                                    right: 12,
+                                    child: Icon(
+                                      Icons.favorite_border,
+                                      size: 24,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            // Product Details
+                            Padding(
+                              padding: const EdgeInsets.all(12),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    topsellingData[index]["name"],
+                                    maxLines: 2,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: GoogleFonts.gabarito(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+
+                                  SizedBox(height: 8),
+
+                                  Text(
+                                    "\$${topsellingData[index]["price"]}",
+                                    style: GoogleFonts.gabarito(
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
                 ),
               ),
 
