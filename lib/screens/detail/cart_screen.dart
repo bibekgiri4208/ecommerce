@@ -394,10 +394,13 @@ class CartScreen extends StatelessWidget {
 
                     TextField(
                       decoration: InputDecoration(
-                        prefixIcon: Image.asset(
-                          "assets/discount.png",
-                          height: 10,
-                          width: 10,
+                        prefixIcon: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Image.asset(
+                            "assets/discount.png",
+                            height: 20,
+                            width: 20,
+                          ),
                         ),
                         suffixIcon: CircleAvatar(
                           backgroundColor: Color(0xFF8E6CEF),
@@ -421,32 +424,24 @@ class CartScreen extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => CartScreen()),
-                );
-              },
-              child: Container(
-                width: double.maxFinite,
-                color: Colors.white,
-                child: Center(
-                  child: Container(
-                    height: 60,
-                    width: 350,
-                    decoration: BoxDecoration(
-                      color: Color(0xFF8E6CEF),
-                      borderRadius: BorderRadius.circular(40),
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Checkout",
-                        style: GoogleFonts.gabarito(
-                          fontSize: 20,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w200,
-                        ),
+            child: Container(
+              width: double.maxFinite,
+              color: Colors.white,
+              child: Center(
+                child: Container(
+                  height: 60,
+                  width: 350,
+                  decoration: BoxDecoration(
+                    color: Color(0xFF8E6CEF),
+                    borderRadius: BorderRadius.circular(40),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Checkout",
+                      style: GoogleFonts.gabarito(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w200,
                       ),
                     ),
                   ),
