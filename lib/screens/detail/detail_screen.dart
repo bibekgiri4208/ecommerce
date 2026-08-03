@@ -215,7 +215,7 @@ class DetailScreen extends StatelessWidget {
                                 ),
                                 SizedBox(width: 20),
                                 Icon(
-                                  Icons.add_circle_rounded,
+                                  Icons.remove_circle_rounded,
                                   size: 35,
                                   color: Color(0xFF8E6CEF),
                                 ),
