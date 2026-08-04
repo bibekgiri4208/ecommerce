@@ -1,3 +1,4 @@
+import 'package:ecommerce/screens/detail/checkout_screen.dart';
 import 'package:ecommerce/screens/detail/detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -385,7 +386,7 @@ class CartScreen extends StatelessWidget {
                           "\$208",
                           style: GoogleFonts.gabarito(
                             fontSize: 20,
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w800,
                           ),
                         ),
                       ],
@@ -428,20 +429,28 @@ class CartScreen extends StatelessWidget {
               width: double.maxFinite,
               color: Colors.white,
               child: Center(
-                child: Container(
-                  height: 60,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF8E6CEF),
-                    borderRadius: BorderRadius.circular(40),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Checkout",
-                      style: GoogleFonts.gabarito(
-                        fontSize: 20,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w200,
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => CheckoutScreen()),
+                    );
+                  },
+                  child: Container(
+                    height: 60,
+                    width: 350,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF8E6CEF),
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Checkout",
+                        style: GoogleFonts.gabarito(
+                          fontSize: 20,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w200,
+                        ),
                       ),
                     ),
                   ),
